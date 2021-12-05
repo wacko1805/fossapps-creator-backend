@@ -1,70 +1,93 @@
-<h1>HELLO</h1>
+
+
+<html>
+    <head>
+        <script type="text/javascript" src="assets/js/jszip.js"></script>
+        <script type="text/javascript" src="assets/js/jszip-utils.js"></script>
+        <script src="assets/js/FileSaver.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="https://un.pixel-fy.com/assets/css/style.css">
+       </head>
+    <body onload="test()">
+    <div id="overlay-back"></div>
+<div id="overlay">
+    <div id="dvLoading">
+        <h2>Please wait</h2>
+        <p>This may take a very long time....</p>
+        <div class="bottom"><h2>Downloading selected apps and putting into a fashable zip...</h2>
+        <p><p>DO NOT refresh or leave this page until download has started</p><br>
+        </div>
+
+        <div class="main">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+    </div>
+</div>
+<script>
+              $('#dvLoading, #overlay, #overlay-back').fadeIn(500);
+            </script>
+        </body>
+    <script>
+        
+        function test() {
+var urls = [
 <?php 
-ob_clean();
-ob_end_flush();
-$brochure = $_POST['brochure'] ;
-$version = "v.0.1-beta";
-// create text for customize.sh
-$header1 = 'ui_print "█▀▀ █▀▀█ █▀▀ █▀▀ █▀▀█ █▀▀█ █▀▀█ █▀▀"';
-$header2 = 'ui_print "█▀▀ █░░█ ▀▀█ ▀▀█ █▄▄█ █░░█ █░░█ ▀▀█"';
-$header3 = 'ui_print "▀░░ ▀▀▀▀ ▀▀▀ ▀▀▀ ▀░░▀ █▀▀▀ █▀▀▀ ▀▀▀ 𝘾𝙪𝙨𝙩𝙤𝙢"';
-$header4 = 'ui_print "Build on Fossapps Creater ' . $version . ' @ un.pixel-fy.com"';
-$header5 = 'ui_print "By wacko1805"';
-//create text for module.prop
-$module1 = 'id=Fossapps-Custom';
-$module2 = 'name=Fossapps Custom';
-$module3 = 'version='.$version.'';
-$module4 = 'versionCode=8';
-$module5 = 'author=Wacko1805';
-$module6 = 'description=Fossapps Package made using Fossapps creator @ un.pixel-fy.com';
-$module7 = 'support=https://t.me/Fossapps_support';
-//create file and insert text for customize.sh
-$customize = file_put_contents('base/customize.sh', $header1 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$customize = file_put_contents('base/customize.sh', $header2 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$customize = file_put_contents('base/customize.sh', $header3 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$customize = file_put_contents('base/customize.sh', $header4 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$customize = file_put_contents('base/customize.sh', $header5 . PHP_EOL , FILE_APPEND | LOCK_EX);
-//create file and insert text for module.prop
-$module = file_put_contents('base/module.prop', $module1 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$module = file_put_contents('base/module.prop', $module2 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$module = file_put_contents('base/module.prop', $module3 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$module = file_put_contents('base/module.prop', $module4 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$module = file_put_contents('base/module.prop', $module5 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$module = file_put_contents('base/module.prop', $module6 . PHP_EOL , FILE_APPEND | LOCK_EX);
-$module = file_put_contents('base/module.prop', $module7 . PHP_EOL , FILE_APPEND | LOCK_EX);
+  $brochure = $_POST['brochure'] ;
+  foreach ($brochure as $file => $val) {
+    echo "'https://morning-spire-04724.herokuapp.com/" . $val . "',";
+   }?>
+];
 
-$archive_file_name = "Fossapps-Custom.zip";
-$send = true;
-if($send) {
-    $zip = new ZipArchive();
-    $res = $zip->open($archive_file_name, ZipArchive::CREATE);
-    if ($res === TRUE) {
-        foreach ($brochure as $file => $val) {
+var zip = new JSZip();
+    var moduleprop = $.get("base/module.prop");
+    var customize = $.get("base/customize.sh");
+    var uninstall = $.get("base/uninstall.sh");
+    var updatebin = $.get("base/META-INF/com/google/android/update-binary");
+    var updaterscript = $.get("base/META-INF/com/google/android/updater-script");
+    var funcions = $.get("base/common/functions.sh");
+    var install = $.get("base/common/install.sh");
 
-        $name =pathinfo($val, PATHINFO_FILENAME); //file name without extension
-            $download_file = file_get_contents($val);
-            $zip->addFromString('system/product/app/' . $name . '/' . $name . '.apk', $download_file);
-            $customize = file_put_contents('base/customize.sh', 'ui_print "Installing selected app: ' . $name . '"' . PHP_EOL , FILE_APPEND | LOCK_EX);
-            $zip->addFile('base/customize.sh', 'customize.sh');
-            $zip->addFile('base/module.prop', 'module.prop');
-            $zip->addFile('base/uninstall.sh', 'uninstall.sh');
-            $zip->addFile('base/common/functions.sh', 'common/functions.sh');
-            $zip->addFile('base/common/install.sh', 'common/install.sh');
-            $zip->addFile('base/META-INF/com/google/android/update-binary', 'META-INF/com/google/android/update-binary');
-            $zip->addFile('base/META-INF/com/google/android/updater-script', 'META-INF/com/google/android/updater-script');
-        }
-        $zip->close();
-        header("Content-type: application/zip"); 
-        header("Content-Disposition: attachment; filename=$archive_file_name");
-        header("Content-length: " . filesize($archive_file_name));
-        header("Pragma: no-cache"); 
-        header("Expires: 0"); 
-        readfile("$archive_file_name");
-        unlink("$archive_file_name");
-        unlink('base/customize.sh');
-        unlink('base/module.prop');
-    }else {
-        echo 'failed';
+    var count = 0;
+    var count2 = 0;
+    var zipFilename = "Fossapps-Custom.zip";
+    var nameFromURL = [];
+
+    var the_arr = "";
+    for (var i = 0; i< urls.length; i++){
+        the_arr = urls[i].split('/');
+        nameFromURL[i] = the_arr.pop();
+
     }
+
+    urls.forEach(function(url){
+        var filename = nameFromURL[count2];
+        var foldername = filename.split('.').slice(0, -1).join('.');
+        count2++;
+        // loading a file and add it in a zip file
+        JSZipUtils.getBinaryContent(url, function (err, data) {
+            if(err) {
+                throw err; // or handle the error
+            }
+      
+            zip.file("module.prop", moduleprop);
+            zip.file("customize.sh", customize);
+            zip.file("uninstall.sh", uninstall);
+            zip.file("META-INF/com/google/android/update-binary", updatebin);
+            zip.file("META-INF/com/google/android/updater-script", updaterscript);
+            zip.file("common/functions.sh", funcions);
+            zip.file("common/install.sh", install);
+
+            zip.file("system/product/app/" + foldername + "/" + filename, data, {binary:true});
+            count++;
+            if (count === urls.length) {
+                zip.generateAsync({type:'blob'}).then(function(content) {
+                    saveAs(content, zipFilename);
+                });
+            }
+        });
+    });
 }
-?>
+    </script>
+</html>
