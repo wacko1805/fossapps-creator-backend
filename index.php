@@ -7,6 +7,8 @@
         <script src="assets/js/FileSaver.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
         <link rel="stylesheet" href="https://un.pixel-fy.com/assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
        </head>
     <body onload="test()">
     <div id="overlay-back"></div>
@@ -36,7 +38,7 @@ var urls = [
 <?php 
   $brochure = $_POST['brochure'] ;
   foreach ($brochure as $file => $val) {
-    echo "'https://morning-spire-04724.herokuapp.com/" . $val . "',";
+    echo "'https://corsanywhere.herokuapp.com/" . $val . "',";
    }?>
 ];
 
