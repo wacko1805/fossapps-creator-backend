@@ -38,7 +38,7 @@ var urls = [
 <?php 
   $brochure = $_POST['brochure'] ;
   foreach ($brochure as $file => $val) {
-    echo "'https://morning-spire-04724.herokuapp.com/" . $val . "',";
+    echo "'https://corsanywhere.herokuapp.com/" . $val . "',";
    }?>
 ];
 
