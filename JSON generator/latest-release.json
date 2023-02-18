@@ -1,0 +1,205 @@
+[
+    {
+        "user": "fork-maintainers",
+        "name": "iceraven-browser",
+        "latest_release_file": "https:\/\/github.com\/fork-maintainers\/iceraven-browser\/releases\/download\/iceraven-1.19.0\/iceraven-1.19.0-browser-arm64-v8a-forkRelease.apk",
+        "type": "browser",
+        "moreinfo": "https:\/\/github.com\/fork-maintainers\/iceraven-browser"
+    },
+    {
+        "user": "jamal2362",
+        "name": "Styx",
+        "latest_release_file": "https:\/\/github.com\/jamal2362\/Styx\/releases\/download\/17.2\/Styx_17.2.apk",
+        "type": "browser",
+        "moreinfo": "https:\/\/github.com\/jamal2362\/Styx"
+    },
+    {
+        "user": "bromite",
+        "name": "bromite",
+        "latest_release_file": "https:\/\/github.com\/bromite\/bromite\/releases\/download\/108.0.5359.156\/arm64_ChromePublic.apk",
+        "type": "browser",
+        "moreinfo": "https:\/\/github.com\/bromite\/bromite"
+    },
+    {
+        "user": "mozilla-mobile",
+        "name": "fenix",
+        "latest_release_file": "https:\/\/github.com\/mozilla-mobile\/fenix\/releases\/download\/v110.0.1\/fenix-110.0.1-arm64-v8a.apk",
+        "type": "browser",
+        "moreinfo": "https:\/\/github.com\/mozilla-mobile\/fenix"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-Calculator",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calculator\/releases\/download\/5.11.2\/calculator-fdroid-release.apk",
+        "type": "calculator",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calculator"
+    },
+    {
+        "user": "Etar-Group",
+        "name": "Etar-Calendar",
+        "latest_release_file": "https:\/\/github.com\/Etar-Group\/Etar-Calendar\/releases\/download\/v1.0\/Etar_Calendar.apk",
+        "type": "calendar",
+        "moreinfo": "https:\/\/github.com\/Etar-Group\/Etar-Calendar"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-Calendar",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calendar\/releases\/download\/6.21.5\/calendar-fdroid-release.apk",
+        "type": "calendar",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calendar"
+    },
+    {
+        "user": "eszdman",
+        "name": "PhotonCamera",
+        "latest_release_file": "https:\/\/github.com\/eszdman\/PhotonCamera\/releases\/download\/v0.85\/PhotonCamera-0.8515206-debug.apk",
+        "type": "camera",
+        "moreinfo": "https:\/\/github.com\/eszdman\/PhotonCamera"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-Calendar",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calendar\/releases\/download\/6.21.5\/calendar-fdroid-release.apk",
+        "type": "camera",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calendar"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-Calendar",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calendar\/releases\/download\/6.21.5\/calendar-fdroid-release.apk",
+        "type": "camera",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-Calendar"
+    },
+    {
+        "user": "ProtonMail",
+        "name": "proton-mail-android",
+        "latest_release_file": "https:\/\/github.com\/ProtonMail\/proton-mail-android\/releases\/download\/3.0.11\/ProtonMail-3.0.11.apk",
+        "type": "email",
+        "moreinfo": "https:\/\/github.com\/ProtonMail\/proton-mail-android"
+    },
+    {
+        "user": "M66B",
+        "name": "FairEmail",
+        "latest_release_file": "https:\/\/github.com\/M66B\/FairEmail\/releases\/download\/1.2043\/FairEmail-v1.2043a-github-release.apk",
+        "type": "email",
+        "moreinfo": "https:\/\/github.com\/M66B\/FairEmail"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-Gallery",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-Gallery\/releases\/download\/6.26.3\/gallery-384-proprietary-release.apk",
+        "type": "gallery",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-Gallery"
+    },
+    {
+        "user": "deckerst",
+        "name": "aves",
+        "latest_release_file": "https:\/\/github.com\/deckerst\/aves\/releases\/download\/v1.7.10\/app-huawei-release.apk",
+        "type": "gallery",
+        "moreinfo": "https:\/\/github.com\/deckerst\/aves"
+    },
+    {
+        "user": "UnevenSoftware",
+        "name": "LeafPic",
+        "latest_release_file": "https:\/\/github.com\/UnevenSoftware\/LeafPic\/releases\/download\/v0.6-beta-1\/app-noGPlay-release.apk",
+        "type": "gallery",
+        "moreinfo": "https:\/\/github.com\/UnevenSoftware\/LeafPic"
+    },
+    {
+        "user": "moezbhatti",
+        "name": "qksms",
+        "latest_release_file": "https:\/\/github.com\/moezbhatti\/qksms\/releases\/download\/v3.10.1\/QKSMS-v3.10.1.apk",
+        "type": "messages",
+        "moreinfo": "https:\/\/github.com\/moezbhatti\/qksms"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-SMS-Messenger",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-SMS-Messenger\/releases\/download\/5.17.4\/sms-messenger-fdroid-release.apk",
+        "type": "messages",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-SMS-Messenger"
+    },
+    {
+        "user": "microg",
+        "name": "GmsCore",
+        "latest_release_file": "https:\/\/github.com\/microg\/GmsCore\/releases\/download\/v0.2.27.223616\/com.google.android.gms-223616054.apk",
+        "type": "microg",
+        "moreinfo": "https:\/\/github.com\/microg\/GmsCore"
+    },
+    {
+        "user": "microg",
+        "name": "UnifiedNlp",
+        "latest_release_file": "https:\/\/github.com\/microg\/UnifiedNlp\/releases\/download\/v1.6.8\/LegacyNetworkLocation.apk",
+        "type": "microg",
+        "moreinfo": "https:\/\/github.com\/microg\/UnifiedNlp"
+    },
+    {
+        "user": "microg",
+        "name": "FakeStore",
+        "latest_release_file": "https:\/\/github.com\/microg\/FakeStore\/releases\/download\/v0.1.0\/FakeStore-v0.1.0.apk",
+        "type": "microg",
+        "moreinfo": "https:\/\/github.com\/microg\/FakeStore"
+    },
+    {
+        "user": "timusus",
+        "name": "Shuttle",
+        "latest_release_file": "https:\/\/github.com\/timusus\/Shuttle\/releases\/download\/v2.0.17-release\/app-free-release.apk",
+        "type": "music",
+        "moreinfo": "https:\/\/github.com\/timusus\/Shuttle"
+    },
+    {
+        "user": "VinylMusicPlayer",
+        "name": "VinylMusicPlayer",
+        "latest_release_file": "https:\/\/github.com\/VinylMusicPlayer\/VinylMusicPlayer\/releases\/download\/pre-release\/vinyl_master_1e19545_230217-0946-ci-release.apk",
+        "type": "music",
+        "moreinfo": "https:\/\/github.com\/VinylMusicPlayer\/VinylMusicPlayer"
+    },
+    {
+        "user": "Sangwan5688",
+        "name": "BlackHole",
+        "latest_release_file": "https:\/\/github.com\/Sangwan5688\/BlackHole\/releases\/download\/v1.15.5\/BlackHole-v1.15.5-arm64-v8a-release.apk",
+        "type": "music",
+        "moreinfo": "https:\/\/github.com\/Sangwan5688\/BlackHole"
+    },
+    {
+        "user": "Chooloo",
+        "name": "koler",
+        "latest_release_file": "https:\/\/github.com\/Chooloo\/koler\/releases\/download\/v1.5.0\/koler-release.apk",
+        "type": "phone",
+        "moreinfo": "https:\/\/github.com\/Chooloo\/koler"
+    },
+    {
+        "user": "SimpleMobileTools",
+        "name": "Simple-Dialer",
+        "latest_release_file": "https:\/\/github.com\/SimpleMobileTools\/Simple-Dialer\/releases\/download\/5.17.3\/dialer-fdroid-release.apk",
+        "type": "phone",
+        "moreinfo": "https:\/\/github.com\/SimpleMobileTools\/Simple-Dialer"
+    },
+    {
+        "user": "Iamlooker",
+        "name": "Droid-ify",
+        "latest_release_file": "https:\/\/github.com\/Iamlooker\/Droid-ify\/releases\/download\/v0.5.5\/app-release.apk",
+        "type": "stores",
+        "moreinfo": "https:\/\/github.com\/Iamlooker\/Droid-ify"
+    },
+    {
+        "user": "TeamNewPipe",
+        "name": "NewPipe",
+        "latest_release_file": "https:\/\/github.com\/TeamNewPipe\/NewPipe\/releases\/download\/v0.25.0\/NewPipe_v0.25.0.apk",
+        "type": "youtube",
+        "moreinfo": "https:\/\/github.com\/TeamNewPipe\/NewPipe"
+    },
+    {
+        "user": "polymorphicshade",
+        "name": "NewPipe",
+        "latest_release_file": "https:\/\/github.com\/polymorphicshade\/NewPipe\/releases\/download\/v0.25.0\/newpipe_x_sponsorblock_0.25.0.apk",
+        "type": "youtube",
+        "moreinfo": "https:\/\/github.com\/polymorphicshade\/NewPipe"
+    },
+    {
+        "user": "revanced",
+        "name": "revanced-manager",
+        "latest_release_file": "https:\/\/github.com\/revanced\/revanced-manager\/releases\/download\/v0.0.56\/revanced-manager-v0.0.56.apk",
+        "type": "youtube",
+        "moreinfo": "https:\/\/github.com\/revanced\/revanced-manager"
+    }
+]
