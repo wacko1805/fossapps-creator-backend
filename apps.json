@@ -11,11 +11,6 @@
     },
 
     {
-        "user": "bromite",
-        "repo": "bromite",
-        "type": "browser"
-    },
-    {
         "user": "mozilla-mobile",
         "repo": "fenix",
         "type": "browser"
